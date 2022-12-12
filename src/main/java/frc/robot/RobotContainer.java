@@ -5,12 +5,14 @@
 package frc.robot;
 
 import edu.wpi.first.wpilibj.GenericHID;
+import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.XboxController;
 import frc.robot.commands.ExampleCommand;
 import frc.robot.commands.LowerClimberCommand;
 import frc.robot.commands.RaiseClimberCommand;
 import frc.robot.subsystems.ClimberSubsystem;
 import frc.robot.subsystems.ExampleSubsystem;
+import frc.robot.subsystems.IndexerSubsystem;
 import edu.wpi.first.wpilibj2.command.*;
 import edu.wpi.first.wpilibj2.command.button.JoystickButton;
 
@@ -23,6 +25,7 @@ import edu.wpi.first.wpilibj2.command.button.JoystickButton;
 public class RobotContainer {
   // The robot's subsystems and commands are defined here...
   public final ClimberSubsystem climber = new ClimberSubsystem();
+  public final IndexerSubsystem indexer = new IndexerSubsystem();
 
   public static GenericHID controller = new GenericHID(0);
 
@@ -44,6 +47,9 @@ public class RobotContainer {
 
     new JoystickButton(controller, 6)
     .whenHeld(new StartEndCommand(climber::lower, climber::stop, climber));
+
+    new JoystickButton(controller, 9)
+    .whenHeld(new StartEndCommand(indexer::extend, indexer::retract, indexer));
   }
 
   /**

@@ -18,4 +18,6 @@ public final class Constants {
     public static final double CLIMBER_POWER = 1.0;
     // Create a new constant Called CLIMBER_CURRENT_LIMIT and set to 10
     public static final int CLIMBER_CURRENT_LIMIT = 10;
+    public static final int INDEXER_EXTENSION = 40;
+    public static final int INDEXER_SERVO_PORT = 0;
 }

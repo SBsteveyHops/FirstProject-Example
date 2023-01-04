@@ -18,7 +18,6 @@ import frc.robot.subsystems.ExampleSubsystem;
 import frc.robot.subsystems.IndexerSubsystem;
 import frc.robot.subsystems.ShooterSubsystem;
 import edu.wpi.first.wpilibj2.command.*;
-import edu.wpi.first.wpilibj2.command.button.JoystickButton;
 
 /**
  * This class is where the bulk of the robot should be declared. Since Command-based is a
@@ -32,6 +31,7 @@ public class RobotContainer {
   public final IndexerSubsystem indexer = new IndexerSubsystem();
   public final ShooterSubsystem shooter = new ShooterSubsystem();
   public final DriveSubsystem drive = new DriveSubsystem();
+
   public static GenericHID controller = new GenericHID(0);
 
   /** The container for the robot. Contains subsystems, OI devices, and commands. */

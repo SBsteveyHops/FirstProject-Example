@@ -20,4 +20,18 @@ public final class Constants {
     public static final int CLIMBER_CURRENT_LIMIT = 10;
     public static final int INDEXER_EXTENSION = 40;
     public static final int INDEXER_SERVO_PORT = 0;
+    public static final int TOP_SHOOTER_PORT = 6;
+    public static final int BOTTOM_SHOOTER_PORT = 5;
+
+    public static final int WHEEL_PORT_FRONT_LEFT = 1;
+    public static final int WHEEL_PORT_REAR_LEFT = 3;
+    public static final int WHEEL_PORT_FRONT_RIGHT = 2;
+    public static final int WHEEL_PORT_REAR_RIGHT = 4;
+
+    public static final double MOVEMENT_SPEED = 1;
+    public static final double TURN_SPEED = 1;
+    public static final double DRIVE_SPEED_MULTI = 1.0;
+
+    public static final double DEADBAND = 0.06;
+    public static final double EXPONENT = 0.1;
 }
